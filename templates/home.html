@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+</head>
+
+<body>
+    <!-- header section -->
+    <nav id="Navbar">
+        <span class="logo">Suresh Reddy</span>
+        <ul class="nav-links">
+            <li><button onclick="home()">Home</button></li>
+            <li><button onclick="projects()">Projects</button></li>
+            <li><button onclick="about()">About</button></li>
+            <li><button>Blog</button></li>
+            <li><button onclick="contact()">Contact</button></li>
+        </ul>
+        <button id="Login">Login</button>
+    </nav>
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <div class="profile-image">
+            <img src="{% static 'images/profile1.png' %}" alt="Profile_Image" id="Profile_Image"
+                style="width:300px; height:300px;">
+        </div>
+        <div class="profile-info" id="Profile_Info">
+            <h1 class="name" id="Name">Hello, I'm <br> <span style="color: rgb(255, 94, 0);">Suresh Reddy Manda</span>
+            </h1>
+            <p> Django Developer | Web Enthusiast</p>
+            <br>
+            <button onclick="View_my_work()">View My Work </button>
+        </div>
+    </div>
+    <!-- project-section -->
+    <h1 id="project-section_heading">Projects</h1>
+    <div class="project-section1" id="project-section">
+        <div class="project-card1">
+            <img src="{% static 'images/newsproject_image.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>News Project</h2>
+            <p>This project showcases the latest news updates, built using Django and integrated with a news Static
+                for real-time data.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+        <div class="project-card1">
+            <img src="{% static 'images/netfilx_project.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>Netfilx Clone</h2>
+            <p>This project is a Netflix clone built using Django, featuring user authentication, video streaming,
+                and a dynamic content library.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+        <div class="project-card1">
+            <img src="{% static 'images/Coding_School.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>Sheryains coding school</h2>
+            <p>This project is a coding school platform designed to teach programming skills, featuring interactive
+                lessons, quizzes, and progress tracking.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+    </div>
+    <div class="project-section2">
+        <div class="project-card2">
+            <img src="{% static 'images/newsproject_image.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>News Project</h2>
+            <p>This project showcases the latest news updates, built using Django and integrated with a news Static
+                for real-time data.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+        <div class="project-card1">
+            <img src="{% static 'images/netfilx_project.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>Netfilx Clone</h2>
+            <p>This project is a Netflix clone built using Django, featuring user authentication, video streaming,
+                and a dynamic content library.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+        <div class="project-card1">
+            <img src="{% static 'images/Coding_School.png' %}" alt="Project_Image" id="Project_Image"
+                style="width:100%; height:auto; border-radius: 3px;">
+            <h2>Sheryains coding school</h2>
+            <p>This project is a coding school platform designed to teach programming skills, featuring interactive
+                lessons, quizzes, and progress tracking.</p>
+            <a href="#"><img src="{% static 'images/github_logo.svg' %}" alt="" style="width: 16px; height: auto;">
+                GitHub</a>
+        </div>
+    </div>
+    <!-- About section -->
+
+    <div class="about-card" id="about-card">
+        <h1 id="about-section_heading">About</h1>
+        <!-- <div class="about-image">
+                <img src="{% static 'images/profile1.png'%}" alt="" id="About_Image"
+                    style="width:50%; height:about; border-radius: 3px;">
+            </div> -->
+        <!-- <div class="about-info">
+            <p><span style="font-size: 45px; padding: none; margin: 0%;">I</span> 'm a passionate Django developer with
+                a keen interest in web development. I love creating dynamic and
+                user-friendly applications that solve real-world problems. My goal is to continuously learn and improve
+                my skills while contributing to exciting projects.</p>
+            <p>In my free time, I enjoy exploring new technologies, reading tech blogs, and working on personal
+                projects.
+                I'm always eager to collaborate with like-minded individuals and share knowledge.</p>
+        </div> -->
+    </div>
+    <div class="about-skills1">
+        <div class="skills">
+            <h2>Techincal Skills</h2>
+            <br>
+            <ul>
+                <li><img src="{% static 'images/html5.svg' %}" alt="html"></li>
+                <li><img src="{% static 'images/css3.svg' %}" alt="css"></li>
+                <li><img src="{% static 'images/javascript.svg' %}" alt="javascript"></li>
+                <li><img src="{% static 'images/python.svg' %}" alt="python"></li>
+                <li><img src="{% static 'images/nodejs.svg' %}" alt="node.js"></li>
+                <li><img src="{% static 'images/react.svg' %}" alt="react"></li>
+                <li><img src="{% static 'images/django.svg' %}" alt="Django"></li>
+            </ul>
+        </div>
+        <div class="education">
+            <h2>Education & Certifications</h2>
+            <br>
+            <p>
+            <ul>
+                <li>
+                    Completed a Bachelor's degree in Computer Science from Ralayaseema University.
+                </li>
+                <li>
+                    Certified Django Developer from JSpiders Institute.
+                </li>
+                <li>
+                    Completed various online courses on web development and programming.
+                </li>
+            </ul>
+            </p>
+            <section id="certifications">
+                <ul class="cert-list">
+                    <li>
+                        <strong>Responsive Web Design</strong><br>
+                        <span>freeCodeCamp · May 2025</span><br>
+                        <a href="https://www.freecodecamp.org/certification/suresh_reddy/responsive-web-design"
+                            target="_blank">
+                            View Certificate
+                        </a>
+                    </li>
+
+                    <li>
+                        <strong>CSS, Bootstrap And JavaScript And Python Stack Course</strong><br>
+                        <span>Udemy · April 2025</span><br>
+                        <a href="https://www.udemy.com/certificate/UC-e9f544ca-7f03-4b91-9e2f-0f4c1c474dbf/"
+                            target="_blank">
+                            View Certificate
+                        </a>
+                    </li>
+                    <li>
+                        <strong>Frontend development</strong><br>
+                        <span>OneRoadmap · March 6 2025</span><br>
+                        <a href="https://oneroadmap.io/skills/frontend/certificate/CERT-43CA7517" target="_blank">
+                            View Certificate
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+    <div class="about-skill2">
+        <div class="skills1">
+            <h2>Tools & Technologies</h2>
+            <ul>
+                <li>
+                    <img src="{% static 'images/git.svg' %}" alt="html" style="width: 40px; height: auto;">
+                </li>
+                <li>
+                    <img src="{% static 'images/github.svg' %}" alt="css" style="width: 40px; height: auto;">
+                </li>
+                <li style="text-align: center; align-items: center; padding-top: 18px; font-size: 18px;">
+                    SQL
+                </li>
+            </ul>
+        </div>
+        <div class="Achivements">
+            <h2>Achivements</h2>
+            <ul>
+                <li>
+                    <h3>Developed & Deployed a Real-Time Video Streaming Platform</h3>
+                    <p>
+                        Built a Netflix-like streaming web app with user authentication, real-time chat, and scalable
+                        video features using React, Node.js.
+                    </p>
+                </li>
+                <li>
+                    <h3> Achieved 40% Growth in Technical Skills in 3 Months</h3>
+
+                    <p>
+                        Strengthened expertise in full-stack development during a hands-on internship at IIDT, mastering
+                        tools like Django, React, and Git through collaborative project work.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer-section">
+        <h1 id="contact-heading">Contact</h1>
+        <div class="footer-section1">
+            <ul>
+                <li>mandasuresh883@gmail.com</li>
+                <li>Instagram</li>
+                <li>LinkedIn</li>
+                <li>X</li>
+            </ul>
+        </div>
+        <div class="footer-section2">
+            <ul>
+                <li><button>View</button></li>
+                <li><button class="Resume-download">Download Resume</button></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="{% static 'js/home.js'%}" defer></script>
+</body>
+
+</html
